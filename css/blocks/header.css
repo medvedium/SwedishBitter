@@ -1,33 +1,19 @@
 .header {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  width: 100%;
+}
+.header__inner {
   display: flex;
   justify-content: space-between;
-  -ms-align-items: center;
   align-items: center;
   margin: 35px 0;
 }
 .logo {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
-  -ms-align-items: center;
   align-items: center;
+  justify-content: space-between;
 }
-.logo__phone {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+.phone {
   display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
   align-items: flex-end;
   font-family: var(--font);

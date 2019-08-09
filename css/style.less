@@ -1,28 +1,28 @@
 // compress: true
 
 body {
-    margin: 0;
-    padding: 0;
-    max-width: 1920px;
-    box-sizing: border-box;
-  }
-  *,
-  :before,
-  :after {
-    box-sizing: inherit;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .container__bg {
-    max-width: 1720px;
-    margin: 0 auto;
-  }
-  :root {
-    --font: Montserrat, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
 
- @import "blocks/header.less";
- @import "blocks/intro.less";
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container__bg {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+@import "blocks/header.less";
+@import "blocks/intro.less";

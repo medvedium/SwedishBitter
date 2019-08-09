@@ -1,1 +1,117 @@
-body{margin:0;padding:0;max-width:1920px;box-sizing:border-box}*,:before,:after{box-sizing:inherit}.container{max-width:1200px;margin:0 auto}.container__bg{max-width:1720px;margin:0 auto}:root{--font:Montserrat,sans-serif}.header{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;justify-content:space-between;-ms-align-items:center;align-items:center;margin:35px 0}.logo{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-ms-align-items:center;align-items:center}.logo__phone{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;-o-flex-direction:column;flex-direction:column;align-items:flex-end;font-family:var(--font);font-size:20px;font-weight:500}.logo__phone a{text-decoration:none;color:#303030;margin-left:12px}.logo__phone a img{margin-right:12px}.logo__phone span{font-size:12px;font-family:var(--font);font-weight:400;color:#9a9a9a}.logo__text{font-family:var(--font);font-size:16px;font-weight:400;color:#9e9e9e;margin-left:30px}.intro__bg{background:url("../img/intro_bg.jpg") top no-repeat;height:auto}.intro__inner{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;justify-content:space-between}.intro__item{width:50%;color:#fff;position:relative;padding-top:170px}.intro__item img{position:absolute;top:100px;right:150px}.intro__item span{font-family:var(--font);font-weight:700;font-size:14px;text-transform:uppercase}.intro__item h1{font-family:var(--font);font-weight:600;font-size:60px;margin:30px 0 50px}.intro__item p{font-family:var(--font);font-weight:400;font-size:18px}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+*,
+:before,
+:after {
+    box-sizing: inherit
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.container__bg {
+    max-width: 1720px;
+    margin: 0 auto
+}
+
+.header {
+    width: 100%
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 500
+}
+
+.logo__phone a {
+    text-decoration: none;
+    color: #303030;
+    margin-left: 12px
+}
+
+.logo__phone a img {
+    margin-right: 12px
+}
+
+.logo__phone span {
+    font-size: 12px;
+    font-family: var(--font);
+    font-weight: 400;
+    color: #9a9a9a
+}
+
+.logo__text {
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+    color: #9e9e9e;
+    margin-left: 30px
+}
+
+.intro__bg {
+    background: url("../img/intro_bg.jpg") top no-repeat;
+    height: auto
+}
+
+.intro__inner {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.intro__item {
+    width: 50%;
+    color: #fff;
+    position: relative;
+    padding-top: 170px
+}
+
+.intro__item img {
+    position: absolute;
+    top: 100px;
+    right: 150px
+}
+
+.intro__item span {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+.intro__item h1 {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 60px;
+    margin: 30px 0 50px
+}
+
+.intro__item p {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 18px
+}
