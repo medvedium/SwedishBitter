@@ -1,17 +1,23 @@
-.logo {
-  width: 100%;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic");
 body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Montserat, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1720px;
+}
+
+.logo {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
