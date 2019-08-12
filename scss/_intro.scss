@@ -1,0 +1,33 @@
+.container-bg {
+  background: url("../img/bg.jpg") center center no-repeat / cover;
+}
+.intro {
+  position: relative;
+
+  &__inner {
+    display: flex;
+    padding-top: 170px;
+    padding-bottom: 195px;
+  }
+  &__item {
+    width: 50%;
+    color: #fff;
+  }
+  &__img {
+    position: absolute;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

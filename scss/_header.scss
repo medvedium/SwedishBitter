@@ -1,15 +1,17 @@
 .header__inner {
   display: flex;
   justify-content: space-between;
+  margin: 30px auto;
 }
 .logo {
   display: flex;
   align-items: center;
-}
-.logo__text {
-  margin-left: 40px;
-  font-size: 1.06rem;
-  color: $gray;
+
+  &__text {
+    margin-left: 40px;
+    font-size: 1.06rem;
+    color: $gray;
+  }
 }
 .header__phone {
   display: flex;
@@ -17,18 +19,22 @@
   justify-content: center;
   align-items: flex-end;
 }
-.phone__text {
+.phone__link {
   text-decoration: none;
   display: flex;
+  align-items: center;
 }
 .phone__icon {
   margin-right: 10px;
+  height: 15px;
 }
 .phone {
   color: $main;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .phone__text {
   color: $gray;
+  font-size: 12px;
+  font-weight: 400;
 }
