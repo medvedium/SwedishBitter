@@ -17,7 +17,12 @@ body {
   max-width: 1720px;
 }
 
-.logo {
-  width: 100%;
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
