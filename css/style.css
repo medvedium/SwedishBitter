@@ -6,7 +6,6 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 15px;
   width: 100%;
-  max-width: 1920px;
 }
 
 *,
@@ -102,6 +101,8 @@ p {
 }
 
 .container-bg {
+  background: #c83636;
+  background-color: #3d4b7c;
   background: url("../img/bg.jpg") center center no-repeat/cover;
 }
 
@@ -149,7 +150,7 @@ p {
   background: #ffffff;
   width: 570px;
   height: 315px;
-  border: 1px solid #A4C58C;
+  border: 1px solid #a4c58c;
   padding: 50px;
 }
 
@@ -169,7 +170,7 @@ p {
   right: 75px;
   height: 8px;
   width: 30px;
-  background: #7EB152 url("../img/arrow.png") center center no-repeat;
+  background: #7eb152 url("../img/arrow.png") center center no-repeat;
   cursor: pointer;
   z-index: 15;
 }
@@ -186,30 +187,30 @@ p {
   width: 200px;
   padding: 10px;
   margin-right: 30px;
-  color: #A4C58C;
+  color: #a4c58c;
   border: none;
-  border-bottom: 1px solid #A4C58C;
+  border-bottom: 1px solid #a4c58c;
 }
 
 .intro__form input:not(:last-child)::-webkit-input-placeholder {
-  color: #A4C58C;
+  color: #a4c58c;
 }
 
 .intro__form input:not(:last-child):-moz-placeholder {
-  color: #A4C58C;
+  color: #a4c58c;
 }
 
 .intro__form input:not(:last-child)::-moz-placeholder {
-  color: #A4C58C;
+  color: #a4c58c;
 }
 
 .intro__form input:not(:last-child):-ms-input-placeholder {
-  color: #A4C58C;
+  color: #a4c58c;
 }
 
 .intro__form input:last-child {
   position: relative;
-  background: #7EB152;
+  background: #7eb152;
   font-size: 14px;
   font-weight: 700;
   padding: 25px 110px 25px 75px;
@@ -245,7 +246,7 @@ p {
   display: block;
   width: 25px;
   height: 25px;
-  border: 5px solid #BFD8A9;
+  border: 5px solid #bfd8a9;
   border-radius: 50%;
   position: absolute;
   top: -30px;
@@ -255,8 +256,8 @@ p {
 .features__title {
   font-size: 18px;
   font-weight: 600;
-  color: #A4C58C;
-  border-bottom: 3px solid #A4C58C;
+  color: #a4c58c;
+  border-bottom: 3px solid #a4c58c;
 }
 
 .features__title--number {
