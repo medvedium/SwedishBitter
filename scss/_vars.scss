@@ -1,2 +1,23 @@
 $gray: #9a9a9a;
 $main: #303030;
+$green-main: #7EB152;
+$green-secondary:#A4C58C;
+$green-pseudo: #BFD8A9;
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}

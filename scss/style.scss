@@ -4,6 +4,8 @@ body {
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
+  width: 100%;
+  max-width: 1920px;
 }
 
 *,
@@ -11,11 +13,13 @@ body {
 :before {
   box-sizing: inherit;
 }
+
 .container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
