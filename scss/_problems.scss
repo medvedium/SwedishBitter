@@ -181,4 +181,9 @@
       transform: rotate(-45deg);
     }
   }
+  &__link {
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+  }
 }
