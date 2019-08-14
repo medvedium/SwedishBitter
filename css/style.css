@@ -103,7 +103,8 @@ p {
 .container-bg {
   background: #c83636;
   background-color: #3d4b7c;
-  background: url("../img/bg.jpg") center center no-repeat/cover;
+  background: url("../img/bg.jpg") center center no-repeat;
+  background-size: cover;
 }
 
 .intro {
@@ -372,7 +373,7 @@ p {
   left: 0;
 }
 
-.problems--active {
+.problems__body--active {
   opacity: 1;
 }
 
@@ -396,6 +397,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .problems__list--item1 {
@@ -486,5 +488,19 @@ p {
 .problems__list--number {
   color: #a4c58c;
   margin-right: 20px;
+}
+
+.problems__list--active::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #a4c58c;
+  border-bottom: 2px solid #a4c58c;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=style.css.map */
