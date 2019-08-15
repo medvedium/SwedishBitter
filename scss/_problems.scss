@@ -3,7 +3,7 @@
   margin-bottom: 200px;
 
   &__container {
-    background: #f6f9f3;
+    background: $gray-bg;
     padding-bottom: 30px;
   }
 
@@ -210,7 +210,7 @@
   font-weight: 400;
 
   &--wrap {
-    background: #f6f9f3;
+    background: $gray-bg;
     padding: 20px;
     z-index: 5;
     position: absolute;
@@ -223,7 +223,7 @@
   &__link {
     display: inline-block;
     color: $green-main;
-    background: #f6f9f3;
+    background: $gray-bg;
     position: absolute;
     bottom: 15px;
     left: 60px;

@@ -541,6 +541,31 @@ p {
   padding: 0 10px;
 }
 
+.popularity {
+  margin-bottom: 200px;
+}
+
+.popularity__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popularity__item:first-child {
+  background: url("../img/popularity-bg.jpg") right top no-repeat;
+}
+
+.popularity__item:last-child {
+  padding: 45px 0 120px 70px;
+}
+
+.popularity__title {
+  font-size: 40px;
+  font-weight: 700;
+  width: 80%;
+  margin-bottom: 45px;
+}
+
 .button {
   background: #7eb152;
   text-decoration: none;
