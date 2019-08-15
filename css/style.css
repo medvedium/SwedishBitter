@@ -273,7 +273,7 @@ p {
 
 .problems {
   margin-top: 200px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 
 .problems__container {
@@ -498,9 +498,70 @@ p {
   border-right: 2px solid #a4c58c;
   border-bottom: 2px solid #a4c58c;
   position: absolute;
-  right: 40px;
+  right: 15px;
   top: 50%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.problems__link--wrap {
+  position: absolute;
+  bottom: -120px;
+  left: 0px;
+  width: 500px;
+}
+
+.factoid {
+  border: 1px solid rgba(164, 197, 140, 0.6);
+  padding: 32px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.factoid--wrap {
+  background: #f6f9f3;
+  padding: 20px;
+  z-index: 5;
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 416px;
+  border: 1px solid rgba(164, 197, 140, 0.2);
+}
+
+.factoid__link {
+  display: inline-block;
+  color: #7eb152;
+  background: #f6f9f3;
+  position: absolute;
+  bottom: 15px;
+  left: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.button {
+  background: #7eb152;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px 150px 25px 125px;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.button::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 8px;
+  background: url("../img/arrow.png");
+  position: absolute;
+  right: 110px;
+  bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */

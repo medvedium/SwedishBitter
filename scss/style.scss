@@ -29,15 +29,35 @@ p {
   margin: 0;
   padding: 0;
 }
-.button {
-  background: $green-main;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
+
+
 
 @import "vars";
 @import "header";
 @import "intro";
 @import "features";
 @import "problems";
+
+.button {
+  background: $green-main;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px 150px 25px 125px;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 8px;
+    background: url("../img/arrow.png");
+    position: absolute;
+    right: 110px;
+    bottom: 32px;
+  }
+}

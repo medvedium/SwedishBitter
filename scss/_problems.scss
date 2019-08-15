@@ -1,6 +1,6 @@
 .problems {
   margin-top: 200px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 
   &__container {
     background: #f6f9f3;
@@ -44,34 +44,42 @@
         top: 0px;
         left: 140px;
       }
+
       &-02 {
         left: 160px;
         top: -90px;
       }
+
       &-03 {
         left: 227px;
         top: -185px;
       }
+
       &-04 {
         left: 295px;
         top: -90px;
       }
+
       &-05 {
         left: 315px;
         top: 0;
       }
+
       &-06 {
         left: 290px;
         top: 100px;
       }
+
       &-07 {
         left: 290px;
         top: 250px;
       }
+
       &-08 {
         left: 160px;
         top: 250px;
       }
+
       &-09 {
         left: 160px;
         top: 100px;
@@ -84,9 +92,11 @@
       left: 0;
     }
   }
+
   &__body--active {
     opacity: 1;
   }
+
   &__list {
     height: 100%;
     display: grid;
@@ -167,6 +177,7 @@
       color: $green-secondary;
       margin-right: 20px;
     }
+
     &--active::before {
       content: "";
       display: inline-block;
@@ -176,14 +187,48 @@
       border-bottom: 2px solid $green-secondary;
       position: absolute;
       // right: 40px;
-      right: 40px;
+      right: 15px;
       top: 50%;
       transform: rotate(-45deg);
     }
   }
+
   &__link {
+    &--wrap {
+      position: absolute;
+      bottom: -120px;
+      left: 0px;
+      width: 500px;
+    }
+  }
+}
+
+.factoid {
+  border: 1px solid rgba($green-secondary, 0.6);
+  padding: 32px;
+  font-size: 16px;
+  font-weight: 400;
+
+  &--wrap {
+    background: #f6f9f3;
+    padding: 20px;
+    z-index: 5;
     position: absolute;
-    bottom: -50px;
-    left: 100px;
+    bottom: -13px;
+    left: 0;
+    width: 416px;
+    border: 1px solid rgba($green-secondary, 0.2);
+  }
+
+  &__link {
+    display: inline-block;
+    color: $green-main;
+    background: #f6f9f3;
+    position: absolute;
+    bottom: 15px;
+    left: 60px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
   }
 }
