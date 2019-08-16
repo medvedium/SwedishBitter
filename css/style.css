@@ -548,6 +548,7 @@ p {
 
 .popularity {
   margin-bottom: 200px;
+  position: relative;
 }
 
 .popularity__inner {
@@ -556,12 +557,34 @@ p {
   display: flex;
 }
 
-.popularity__item:first-child {
-  background: url("../img/popularity-bg.jpg") right top no-repeat;
+.popularity--img {
+  position: absolute;
+  right: calc(50% + 78px);
+  top: 0;
+  z-index: -1;
+  max-height: 100%;
 }
 
 .popularity__item:last-child {
-  padding: 45px 0 120px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popularity__item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .popularity__list--item {
@@ -596,6 +619,11 @@ p {
   margin-bottom: 4rem;
 }
 
+.popularity__block--wrap {
+  background: #fff;
+  padding: 20px;
+}
+
 .button {
   background: #7eb152;
   text-decoration: none;
@@ -611,12 +639,8 @@ p {
 
 .button::after {
   content: "";
-  display: block;
   width: 30px;
   height: 8px;
   background: url("../img/arrow.png");
-  position: absolute;
-  right: 110px;
-  bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */

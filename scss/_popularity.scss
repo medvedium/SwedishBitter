@@ -1,14 +1,25 @@
 .popularity {
   margin-bottom: 200px;
+  position: relative;
   &__inner {
     display: flex;
   }
+  &--img {
+    position: absolute;
+    right: calc(50% + 78px);
+    top: 0;
+    z-index: -1;
+    max-height: 100%;
+  }
   &__item {
-    &:first-child {
-      background: url("../img/popularity-bg.jpg") right top no-repeat;
-    }
     &:last-child {
-      padding: 45px 0 120px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &:first-child {
+      display: flex;
+      align-items: flex-end;
     }
   }
   &__list {
@@ -36,5 +47,11 @@
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 4rem;
+  }
+  &__block {
+    &--wrap {
+      background: #fff;
+      padding: 20px;
+    }
   }
 }

@@ -54,12 +54,8 @@ p {
 
   &::after {
     content: "";
-    display: block;
     width: 30px;
     height: 8px;
     background: url("../img/arrow.png");
-    position: absolute;
-    right: 110px;
-    bottom: 32px;
   }
 }
