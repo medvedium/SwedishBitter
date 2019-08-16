@@ -11,10 +11,30 @@
       padding: 45px 0 120px 70px;
     }
   }
+  &__list {
+    &--item {
+      font-weight: 400;
+      font-size: 1.06rem;
+      margin-bottom: 3.33em;
+      display: flex;
+      align-items: center;
+    }
+    &--point {
+      width: 15px;
+      height: 20px;
+      margin-right: 25px;
+      background: url(../img/list-point.png) left center no-repeat;
+    }
+  }
   &__title {
     font-size: 40px;
     font-weight: 700;
     width: 80%;
     margin-bottom: 45px;
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4rem;
   }
 }

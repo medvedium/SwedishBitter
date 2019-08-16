@@ -1,10 +1,13 @@
+:root {
+  font-size: 15px;
+}
+
 body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Montserrat, sans-serif;
-  font-size: 15px;
   width: 100%;
 }
 
@@ -109,6 +112,7 @@ p {
 
 .intro {
   position: relative;
+  margin-bottom: 20rem;
 }
 
 .intro__inner {
@@ -223,7 +227,6 @@ p {
 }
 
 .features {
-  margin-top: 300px;
   margin-bottom: 80px;
 }
 
@@ -266,9 +269,10 @@ p {
 }
 
 .features__description {
-  font-size: 16px;
+  font-size: 1.06rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.06rem;
+  margin-top: 2rem;
 }
 
 .problems {
@@ -398,6 +402,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .problems__list--item1 {
@@ -559,11 +564,36 @@ p {
   padding: 45px 0 120px 70px;
 }
 
+.popularity__list--item {
+  font-weight: 400;
+  font-size: 1.06rem;
+  margin-bottom: 3.33em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popularity__list--point {
+  width: 15px;
+  height: 20px;
+  margin-right: 25px;
+  background: url(../img/list-point.png) left center no-repeat;
+}
+
 .popularity__title {
   font-size: 40px;
   font-weight: 700;
   width: 80%;
   margin-bottom: 45px;
+}
+
+.popularity__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4rem;
 }
 
 .button {
