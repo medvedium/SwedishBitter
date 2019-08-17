@@ -194,13 +194,12 @@
     }
   }
 
-  &__link {
-    &--wrap {
-      position: absolute;
-      bottom: -120px;
-      left: 0px;
-      width: 500px;
-    }
+  &__button {
+    position: absolute;
+    bottom: -120px;
+    left: 0px;
+    width: 500px;
+    padding: 25px 40px;
   }
 }
 

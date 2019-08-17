@@ -8,6 +8,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Montserrat, sans-serif;
+  color: #303030;
   width: 100%;
 }
 
@@ -40,18 +41,20 @@ p {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  padding: 25px 150px 25px 125px;
   width: 100%;
-  display: block;
+  display: inline-block;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
+  text-align: center;
 }
 
 .button::after {
   content: "";
+  display: inline-block;
   width: 30px;
   height: 8px;
+  margin-left: 20px;
   background: url("../img/arrow.png");
 }
 
@@ -529,11 +532,12 @@ p {
           transform: rotate(-45deg);
 }
 
-.problems__link--wrap {
+.problems__button {
   position: absolute;
   bottom: -120px;
   left: 0px;
   width: 500px;
+  padding: 25px 40px;
 }
 
 .factoid {
@@ -579,7 +583,7 @@ p {
 
 .popularity--img {
   position: absolute;
-  right: calc(50% + 78px);
+  right: 0;
   top: 0;
   z-index: -1;
   max-height: 100%;
@@ -596,6 +600,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-left: 30px;
 }
 
 .popularity__item:first-child {
@@ -605,6 +612,12 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  position: relative;
 }
 
 .popularity__list--item {
@@ -629,7 +642,6 @@ p {
 .popularity__title {
   font-size: 40px;
   font-weight: 700;
-  width: 80%;
   margin-bottom: 45px;
 }
 
@@ -650,9 +662,11 @@ p {
 .popularity__block--wrap {
   background: #fff;
   padding: 20px;
+  margin-bottom: -90px;
 }
 
 .popularity__button {
-  padding: 25px 90px 25px 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
