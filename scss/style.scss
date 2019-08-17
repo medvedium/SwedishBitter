@@ -1,61 +1,7 @@
-:root {
-  font-size: 15px;
-}
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-
-  width: 100%;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 @import "vars";
+@import "template";
 @import "header";
 @import "intro";
 @import "features";
 @import "problems";
 @import "popularity";
-
-.button {
-  background: $green-main;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 25px 150px 25px 125px;
-  width: 100%;
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-
-  &::after {
-    content: "";
-    width: 30px;
-    height: 8px;
-    background: url("../img/arrow.png");
-  }
-}

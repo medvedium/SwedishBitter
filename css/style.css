@@ -35,6 +35,26 @@ p {
   padding: 0;
 }
 
+.button {
+  background: #7eb152;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 25px 150px 25px 125px;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.button::after {
+  content: "";
+  width: 30px;
+  height: 8px;
+  background: url("../img/arrow.png");
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,28 +639,20 @@ p {
   margin-bottom: 4rem;
 }
 
+.popularity__block {
+  border: 1px solid #a4c58c;
+  padding: 35px;
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
 .popularity__block--wrap {
   background: #fff;
   padding: 20px;
 }
 
-.button {
-  background: #7eb152;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 25px 150px 25px 125px;
-  width: 100%;
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-}
-
-.button::after {
-  content: "";
-  width: 30px;
-  height: 8px;
-  background: url("../img/arrow.png");
+.popularity__button {
+  padding: 25px 90px 25px 40px;
 }
 /*# sourceMappingURL=style.css.map */
