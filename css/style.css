@@ -669,4 +669,21 @@ p {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+.history {
+  padding: 0 calc(50% - 860px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history__item:first-child {
+  padding-left: 300px;
+}
+
+.history__title {
+  font-size: 2.66rem;
+  font-weight: 700;
+  line-height: 3.33rem;
+}
 /*# sourceMappingURL=style.css.map */
