@@ -782,4 +782,30 @@ p {
 .cite__date {
   color: #9a9a9a;
 }
+
+.set {
+  padding: 0 calc(50% - 860px);
+}
+
+.set__title {
+  font-size: 2.67rem;
+  line-height: 1.25;
+  max-width: 500px;
+}
+
+.set__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.set__bg {
+  width: 100%;
+  max-width: 1720px;
+  height: 400px;
+  background: #f6f9f3;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+.set {
+  padding: 0 calc(50% - 860px);
+  &__title {
+    font-size: 2.67rem;
+    line-height: 1.25;
+    max-width: 500px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bg {
+    width: 100%;
+    max-width: 1720px;
+    height: 400px;
+    background: $gray-bg;
+  }
+}
