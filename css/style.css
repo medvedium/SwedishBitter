@@ -824,6 +824,7 @@ p {
   height: 310px;
   border: 1px solid #a4c58c;
   margin: 10px;
+  margin-bottom: 20px;
   position: relative;
 }
 
