@@ -13,6 +13,7 @@
         "../scss/_history.scss",
         "../scss/_cite.scss",
         "../scss/_set.scss",
+        "../scss/_compound.scss",
         "../scss/_media.scss"
     ],
     "names": [],
