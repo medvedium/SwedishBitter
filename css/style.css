@@ -785,12 +785,27 @@ p {
 
 .set {
   padding: 0 calc(50% - 860px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 300px;
 }
 
 .set__title {
   font-size: 2.67rem;
   line-height: 1.25;
   max-width: 500px;
+  margin-left: 370px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .set__cards {
@@ -800,12 +815,58 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #ffffff;
+  width: 1010px;
+}
+
+.set__cards--item {
+  width: 310px;
+  height: 310px;
+  border: 1px solid #a4c58c;
+  margin: 10px;
+  position: relative;
+}
+
+.set__number {
+  font-size: 10rem;
+  font-weight: 700;
+  color: #f6f9f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
 }
 
 .set__bg {
   width: 100%;
   max-width: 1720px;
-  height: 400px;
+  height: 380px;
   background: #f6f9f3;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.set__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
+}
+
+.set__text {
+  width: 100%;
+  text-align: center;
+  color: #303030;
+  font-size: 0.87rem;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  bottom: 75px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

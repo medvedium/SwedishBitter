@@ -1,19 +1,64 @@
 .set {
   padding: 0 calc(50% - 860px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
   &__title {
     font-size: 2.67rem;
     line-height: 1.25;
     max-width: 500px;
+    margin-left: 370px;
+    align-self: flex-start;
   }
   &__cards {
     display: flex;
     justify-content: center;
+    background: #ffffff;
+    width: 1010px;
+    &--item {
+      width: 310px;
+      height: 310px;
+      border: 1px solid $green-secondary;
+      margin: 10px;
+      position: relative;
+    }
   }
-
+  &__number {
+    font-size: 10rem;
+    font-weight: 700;
+    color: $green-bg;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
   &__bg {
     width: 100%;
     max-width: 1720px;
-    height: 400px;
-    background: $gray-bg;
+    height: 380px;
+    background: $green-bg;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+  &__text {
+    width: 100%;
+    text-align: center;
+    color: $main;
+    font-size: 0.87rem;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 75px;
+    transform: translateX(-50%);
+    text-transform: uppercase;
   }
 }
