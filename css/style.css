@@ -304,7 +304,11 @@ p {
 }
 
 .problems__container {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
   background: #f6f9f3;
+  padding: 0 calc(50%-860px);
   padding-bottom: 30px;
 }
 
@@ -749,5 +753,33 @@ p {
 .history__button {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.cite {
+  margin: 100px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 775px;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  border-top: 2px solid #a4c58c;
+  border-bottom: 2px solid #a4c58c;
+}
+
+.cite__text {
+  font-size: 1.6rem;
+  line-height: 1.66;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.cite__author {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #303030;
+}
+
+.cite__date {
+  color: #9a9a9a;
 }
 /*# sourceMappingURL=style.css.map */

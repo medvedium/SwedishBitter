@@ -1,0 +1,24 @@
+.cite {
+  margin: 100px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 775px;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  border-top: 2px solid $green-secondary;
+  border-bottom: 2px solid $green-secondary;
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.66;
+    font-weight: 700;
+    padding-bottom: 50px;
+  }
+  &__author {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $main;
+  }
+  &__date {
+    color: $gray;
+  }
+}

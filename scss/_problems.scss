@@ -3,7 +3,11 @@
   margin-bottom: 200px;
 
   &__container {
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
     background: $gray-bg;
+    padding: 0 calc(50%-860px);
     padding-bottom: 30px;
   }
 
