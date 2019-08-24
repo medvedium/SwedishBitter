@@ -675,15 +675,79 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 80px;
 }
 
 .history__item:first-child {
-  padding-left: 300px;
+  z-index: 3;
+  padding-top: 100px;
+  position: relative;
+}
+
+.history__item:last-child {
+  z-index: 2;
 }
 
 .history__title {
   font-size: 2.66rem;
   font-weight: 700;
-  line-height: 3.33rem;
+  line-height: 1.25;
+  margin-left: 275px;
+  margin-bottom: 40px;
+}
+
+.history__text {
+  font-size: 1.06rem;
+  line-height: 1.5;
+  padding: 55px 33.5px 40px 275px;
+  background: #f6f9f3;
+  margin-right: -35px;
+  z-index: 20;
+}
+
+.history__subtitle {
+  font-size: 0.93rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 50;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.history__block {
+  width: 370px;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.history__email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 35px;
+  color: #a4c58c;
+  border: none;
+  border-bottom: 1px solid #a4c58c;
+}
+
+.history__email::-webkit-input-placeholder {
+  color: #a4c58c;
+}
+
+.history__email:-moz-placeholder {
+  color: #a4c58c;
+}
+
+.history__email::-moz-placeholder {
+  color: #a4c58c;
+}
+
+.history__email:-ms-input-placeholder {
+  color: #a4c58c;
+}
+
+.history__button {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
