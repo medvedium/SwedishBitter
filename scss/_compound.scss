@@ -1,0 +1,107 @@
+.compound {
+  padding: 0 calc(50% - 585px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    background: $green-bg;
+    position: relative;
+    width: 270px;
+    height: 270px;
+    text-align: center;
+    vertical-align: middle;
+    &:nth-child(1) {
+      order: 3;
+    }
+    &:nth-child(2) {
+      order: -1;
+    }
+    &:nth-child(3) {
+      order: -1;
+    }
+    &-title {
+      width: 570px;
+    }
+    &--factoid {
+      width: 830px;
+      height: 250px;
+      padding: 56px 93px 109px 80px;
+      position: relative;
+      font-size: 1.06rem;
+      font-weight: 500;
+      border: 1px solid $green-secondary;
+      order: 9;
+      & p::before {
+        content: "\2022";
+        color: $green-secondary;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    &--list {
+      list-style: none;
+      font-size: 1.06rem;
+      font-weight: 400;
+      & li {
+        margin-bottom: 20px;
+      }
+      & li::before {
+        content: "\2022";
+        color: $green-secondary;
+        font-weight: bold;
+        display: inline-block;
+        width: 0.8em;
+        margin-left: -1em;
+      }
+    }
+  }
+  &__hover {
+    display: none;
+  }
+  &__number {
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-size: 0.93rem;
+    font-weight: 700;
+    line-height: 1.7;
+    color: $green-secondary;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    letter-spacing: 3px;
+  }
+  &__description {
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $green-secondary;
+    position: absolute;
+    bottom: 15px;
+    right: 11px;
+  }
+  &__secret {
+    display: block;
+    color: $green-pseudo;
+    font-size: 250px;
+    margin-bottom: 65px;
+  }
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 21px 102px 21px 65px;
+    max-width: 390px;
+  }
+}
