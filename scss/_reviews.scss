@@ -1,0 +1,93 @@
+.reviews {
+  margin-bottom: 80px;
+
+  &__inner {
+    padding: 0 calc(50% - 585px);
+    background: $green-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-rus {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+    &-eng {
+      display: none;
+    }
+  }
+  &__title {
+    padding-left: calc(50% - 585px);
+    font-size: 2.66rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  &__switch {
+    display: flex;
+    &--item {
+      width: 50%;
+      background: #ffffff;
+      padding: 25px;
+      font-size: 0.97rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $gray;
+      cursor: pointer;
+      &:first-child {
+        padding-left: calc(50% - 585px);
+      }
+      &.active {
+        background: $green-bg;
+        color: $green-main;
+        cursor: default;
+      }
+    }
+  }
+
+  &__item {
+    flex-basis: 50%;
+    padding: 30px 65px 40px 0;
+    font-size: 1.06rem;
+    font-weight: 400;
+    color: $gray;
+    line-height: 1.375;
+    position: relative;
+    &:before {
+      content: "";
+      width: 30px;
+      height: 3px;
+      background: $green-secondary;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+  &__author {
+    font-weight: 700;
+    color: $main;
+  }
+  &__buttons {
+    display: flex;
+    padding: 0 calc(50% - 585px);
+    margin-top: 20px;
+  }
+  &__button {
+    flex-basis: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &__link {
+    color: $green-main;
+    font-size: 0.97rem;
+    font-weight: 700;
+    &-wrap {
+      flex-basis: 50%;
+      padding-right: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
