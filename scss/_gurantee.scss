@@ -1,0 +1,48 @@
+.guarantee {
+  margin-bottom: 30px;
+  &__title {
+    padding-left: calc(50% - 700px);
+    font-size: 2.66rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    font-size: 1.06rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  &__inner {
+    background: $green-bg;
+    display: flex;
+    padding: 35px calc(50% - 585px) 100px;
+    position: relative;
+  }
+  &__item {
+    width: 50%;
+  }
+  &__factoid {
+    border: 1px solid rgba($green-secondary, 0.6);
+    padding: 45px 50px 100px 50px;
+    position: relative;
+    font-size: 1.06rem;
+    font-weight: 500;
+    &-wrap {
+      padding: 20px;
+      background: #ffffff;
+      max-width: 570px;
+    }
+  }
+  &__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 350px;
+  }
+  &__img {
+    position: absolute;
+    left: calc(50% + 140px);
+    bottom: 100px;
+  }
+}
