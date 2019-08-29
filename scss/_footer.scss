@@ -1,0 +1,13 @@
+.footer {
+  padding: 0 calc(50% - 585px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  &__link {
+    color: $gray;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

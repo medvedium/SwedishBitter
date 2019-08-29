@@ -84,7 +84,7 @@ p {
   color: #9a9a9a;
 }
 
-.header__phone {
+.logo__phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1304,7 +1304,7 @@ p {
 }
 
 .guarantee__title {
-  padding-left: calc(50% - 700px);
+  padding-left: calc(50% - 585px);
   font-size: 2.66rem;
   font-weight: 700;
   margin-bottom: 40px;
@@ -1326,7 +1326,8 @@ p {
 }
 
 .guarantee__item {
-  width: 50%;
+  width: 55%;
+  padding-left: 70px;
 }
 
 .guarantee__factoid {
@@ -1343,6 +1344,17 @@ p {
   max-width: 570px;
 }
 
+.guarantee__but {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #7eb152;
+  background: #ffffff;
+  position: absolute;
+  top: -14px;
+  left: 50px;
+  padding: 5px;
+}
+
 .guarantee__button {
   position: absolute;
   bottom: 0;
@@ -1356,5 +1368,27 @@ p {
   position: absolute;
   left: calc(50% + 140px);
   bottom: 100px;
+}
+
+.footer {
+  padding: 0 calc(50% - 585px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer__link {
+  color: #9a9a9a;
+}
+
+.footer__link:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

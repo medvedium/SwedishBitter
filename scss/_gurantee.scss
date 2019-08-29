@@ -1,7 +1,7 @@
 .guarantee {
   margin-bottom: 30px;
   &__title {
-    padding-left: calc(50% - 700px);
+    padding-left: calc(50% - 585px);
     font-size: 2.66rem;
     font-weight: 700;
     margin-bottom: 40px;
@@ -18,7 +18,8 @@
     position: relative;
   }
   &__item {
-    width: 50%;
+    width: 55%;
+    padding-left: 70px;
   }
   &__factoid {
     border: 1px solid rgba($green-secondary, 0.6);
@@ -31,6 +32,16 @@
       background: #ffffff;
       max-width: 570px;
     }
+  }
+  &__but {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: $green-main;
+    background: #ffffff;
+    position: absolute;
+    top: -14px;
+    left: 50px;
+    padding: 5px;
   }
   &__button {
     position: absolute;
