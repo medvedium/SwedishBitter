@@ -1,0 +1,44 @@
+.creation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  &__block {
+    max-width: 640px;
+    max-height: 625px;
+    border: 1px solid rgba($green-secondary, 0.6);
+    margin: 20px;
+    padding: 40px;
+    height: auto;
+    background: #ffffff;
+    &-wrap {
+      background: #ffffff;
+      margin-left: -100px;
+    }
+  }
+  &__img {
+    margin-right: -213px;
+  }
+  &__title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  &__description {
+    font-size: 1.06rem;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-bottom: 60px;
+  }
+  &__subtext {
+    margin-top: 50px;
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  &__button {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
