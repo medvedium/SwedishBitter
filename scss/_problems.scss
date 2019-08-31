@@ -3,11 +3,9 @@
   margin-bottom: 200px;
 
   &__container {
-    width: 100%;
-    max-width: 1720px;
+    padding: 0 calc(50% - 585px);
     margin: 0 auto;
     background: $green-bg;
-    padding: 0 calc(50%-860px);
     padding-bottom: 30px;
   }
 
@@ -19,8 +17,10 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 60px;
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     margin-bottom: 50px;
+    margin-left: calc(50% - 585px);
   }
 
   &__item {

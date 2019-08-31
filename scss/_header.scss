@@ -1,7 +1,10 @@
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px auto;
+.header {
+  padding: 0 calc(50% - 585px);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
 }
 .logo {
   display: flex;
@@ -12,29 +15,30 @@
     font-size: 1.06rem;
     color: $gray;
   }
-}
-.logo__phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-.phone__link {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-.phone__icon {
-  margin-right: 10px;
-  height: 15px;
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 .phone {
   color: $main;
   font-size: 20px;
   font-weight: 500;
-}
-.phone__text {
-  color: $gray;
-  font-size: 12px;
-  font-weight: 400;
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 10px;
+    height: 15px;
+  }
+  &__text {
+    color: $gray;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }

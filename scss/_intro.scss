@@ -1,29 +1,25 @@
-.container-bg {
-  background: rgb(200, 54, 54);
-  background-color: $intro-bg;
-  background: url("../img/bg.jpg") center center no-repeat;
-  background-size: cover;
-}
-
 .intro {
+  background-color: $intro-bg;
+  background: url("../img/bg.jpg") center top no-repeat;
   position: relative;
-  margin-bottom: 20rem;
+  padding: 0 calc(50% - 585px);
+  margin-bottom: 200px;
 
   &__inner {
     display: flex;
-    padding-top: 170px;
-    padding-bottom: 195px;
+    padding-top: 150px;
   }
 
   &__item {
-    width: 50%;
+    flex-basis: 50%;
     color: #fff;
+    padding-left: 165px;
   }
 
   &__img {
-    position: absolute;
-    bottom: -200px;
+    margin-top: -50px;
     z-index: 5;
+    display: block;
   }
 
   &__subtitle {
@@ -41,6 +37,7 @@
   &__text {
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 95px;
   }
 
   &__form {
@@ -49,25 +46,13 @@
     height: 315px;
     border: 1px solid $green-secondary;
     padding: 50px;
+    position: relative;
 
     &--wrapper {
       padding: 20px;
       background: #ffffff;
-      position: absolute;
+      // position: absolute;
       bottom: -215px;
-      z-index: 15;
-    }
-
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 48px;
-      right: 75px;
-      height: 8px;
-      width: 30px;
-      background: $green-main url("../img/arrow.png") center center no-repeat;
-      cursor: pointer;
       z-index: 15;
     }
 
@@ -91,18 +76,13 @@
         color: $green-secondary;
       }
     }
-
-    input:last-child {
-      position: relative;
-      background: $green-main;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 25px 110px 25px 75px;
-      color: #fff;
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      cursor: pointer;
-    }
+  }
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
