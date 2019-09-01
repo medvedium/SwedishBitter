@@ -75,5 +75,8 @@
 
 @media (max-width: 1199.98px) {
   .creation {
+    &__img {
+      display: none;
+    }
   }
 }
