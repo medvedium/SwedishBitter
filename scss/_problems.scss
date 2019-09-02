@@ -191,7 +191,6 @@
       border-right: 2px solid $green-secondary;
       border-bottom: 2px solid $green-secondary;
       position: absolute;
-      // right: 40px;
       right: 15px;
       top: 50%;
       transform: rotate(-45deg);
@@ -250,6 +249,11 @@
   .problems {
     &__inner {
       flex-direction: column;
+    }
+    &__body {
+      &--img {
+        position: relative;
+      }
     }
   }
 }

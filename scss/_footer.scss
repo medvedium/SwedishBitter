@@ -4,10 +4,30 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
   &__link {
     color: $gray;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
     &:hover {
       text-decoration: none;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__link {
+      &:not(:last-child) {
+        margin-right: 0px;
+      }
     }
   }
 }

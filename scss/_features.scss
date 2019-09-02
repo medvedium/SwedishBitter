@@ -58,14 +58,12 @@
 }
 
 @media (max-width: 991.98px) {
-  .creation {
-    &__img {
-      display: none;
+  .features {
+    &__item {
+      width: 50%;
     }
   }
 }
 
 @media (max-width: 1199.98px) {
-  .creation {
-  }
 }
