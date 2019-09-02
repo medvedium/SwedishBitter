@@ -69,11 +69,11 @@
     font-size: 1.06rem;
     font-weight: 400;
     line-height: 1.6rem;
+    z-index: 3;
 
     &--wrap {
       background: #fff;
       padding: 20px;
-      // margin-right: 90px;
       margin-bottom: -90px;
     }
   }
@@ -83,3 +83,25 @@
     padding-bottom: 25px;
   }
 }
+
+@media (max-width: 575.98px) {
+  .popularity {}
+}
+
+@media (max-width: 767.98px) {
+  .popularity {}
+}
+
+@media (max-width: 991.98px) {
+  .popularity {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+
+    &__img {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {}
