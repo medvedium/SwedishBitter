@@ -5,8 +5,8 @@
   &__container {
     padding: 0 calc(50% - 585px);
     margin: 0 auto;
-    background: $green-bg;
     padding-bottom: 30px;
+    background: $green-bg;
   }
 
   &__inner {
@@ -28,6 +28,7 @@
   }
 
   &__body {
+    width: 100%;
     &--position {
       position: absolute;
       display: flex;
@@ -247,13 +248,90 @@
 
 @media (max-width: 1199.98px) {
   .problems {
+    &__item {
+      width: 100%;
+    }
     &__inner {
       flex-direction: column;
+      align-items: center;
     }
     &__body {
+      background: $green-secondary;
+      display: flex;
+      justify-content: center;
       &--img {
         position: relative;
+        bottom: 0;
       }
+      &--wrap {
+        position: relative;
+      }
+      &--position {
+        &-01 {
+          top: 210px;
+          left: calc(50% - 105px);
+        }
+
+        &-02 {
+          top: 120px;
+          left: calc(50% - 85px);
+        }
+
+        &-03 {
+          top: 25px;
+          left: calc(50% - 22px);
+        }
+
+        &-04 {
+          top: 120px;
+          left: calc(50% + 40px);
+        }
+
+        &-05 {
+          top: 210px;
+          left: calc(50% + 60px);
+        }
+
+        &-06 {
+          top: 310px;
+          left: calc(50% + 40px);
+        }
+
+        &-07 {
+          top: 460px;
+          left: calc(50% + 40px);
+        }
+
+        &-08 {
+          top: 460px;
+          left: calc(50% - 85px);
+        }
+
+        &-09 {
+          top: 310px;
+          left: calc(50% - 85px);
+        }
+      }
+    }
+    &__title {
+      text-align: center;
+      margin: 0 auto 50px;
+    }
+    &__container {
+      padding-bottom: 0;
+    }
+    &__button {
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 416px;
+    }
+  }
+  .factoid {
+    &--wrap {
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

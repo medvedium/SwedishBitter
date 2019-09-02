@@ -10,7 +10,17 @@
     width: 25%;
     padding: 0 35px 0 50px;
     position: relative;
+  }
+  &__title {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: $green-secondary;
+    border-bottom: 3px solid $green-secondary;
 
+    &--number {
+      font-size: 30px;
+    }
     &:before {
       content: "";
       display: block;
@@ -20,17 +30,7 @@
       border-radius: 50%;
       position: absolute;
       top: -30px;
-      left: 0px;
-    }
-  }
-  &__title {
-    font-size: 18px;
-    font-weight: 600;
-    color: $green-secondary;
-    border-bottom: 3px solid $green-secondary;
-
-    &--number {
-      font-size: 30px;
+      left: -30px;
     }
   }
   &__description {
@@ -45,6 +45,7 @@
   .features {
     &__item {
       width: 50%;
+      padding: 70px;
     }
   }
 }
@@ -53,6 +54,7 @@
   .features {
     &__item {
       width: 50%;
+      padding: 70px;
     }
   }
 }
@@ -61,6 +63,7 @@
   .features {
     &__item {
       width: 50%;
+      padding: 70px;
     }
   }
 }
