@@ -3,10 +3,11 @@
   text-align: center;
   width: 100%;
   max-width: 775px;
-  padding-top: 57px;
-  padding-bottom: 57px;
-  border-top: 2px solid $green-secondary;
-  border-bottom: 2px solid $green-secondary;
+  padding: 57px 30px;
+  &--wrap {
+    border-top: 2px solid $green-secondary;
+    border-bottom: 2px solid $green-secondary;
+  }
   &__text {
     font-size: 1.6rem;
     line-height: 1.66;
