@@ -3,8 +3,10 @@
   text-align: center;
   width: 100%;
   max-width: 775px;
-  padding: 57px 30px;
   &--wrap {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 57px 0;
     border-top: 2px solid $green-secondary;
     border-bottom: 2px solid $green-secondary;
   }

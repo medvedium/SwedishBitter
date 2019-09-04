@@ -1,8 +1,9 @@
 .compound {
-  padding: 0 calc(50% - 585px) 100px;
+  padding: 0 calc(50vw - 585px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 130px;
 
   &__hover {
     display: none;
@@ -32,9 +33,10 @@
   &__item {
     padding: 25px 60px;
     margin-bottom: 30px;
+    margin-left: 0;
     background: $green-bg;
     position: relative;
-    width: 270px;
+    width: 23%;
     height: 270px;
     text-align: center;
     vertical-align: middle;
@@ -103,6 +105,9 @@
       border: 1px solid $green-secondary;
       order: 10;
       align-self: flex-end;
+      &-sm {
+        display: none;
+      }
 
       & p::before {
         content: "\2022";
@@ -189,5 +194,56 @@
     right: 0;
     padding: 21px 102px 21px 65px;
     max-width: 390px;
+    &-sm {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .compound {
+    padding: 0 calc(50vw - 355px);
+    &__title {
+      text-align: center;
+    }
+    &__item {
+      width: 47%;
+      &-title {
+        padding: 0 calc(50% - 250px);
+        width: 100%;
+        order: -1;
+      }
+      &--factoid {
+        display: none;
+        &-sm {
+          display: block;
+          width: 47%;
+          order: 12;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          padding: 60px 30px 115px;
+
+          border: 1px solid $green-secondary;
+        }
+      }
+      &:nth-child(12) {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
   }
 }

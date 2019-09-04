@@ -16,14 +16,20 @@
     display: flex;
     justify-content: center;
     background: #ffffff;
-    width: 1010px;
+    width: 100%;
+    max-width: 1010px;
+    max-height: 310px;
+    margin: 0 30px;
+
     &--item {
-      width: 310px;
+      width: 33%;
+      max-width: 310px;
       height: 310px;
       border: 1px solid $green-secondary;
       margin: 10px;
       margin-bottom: 20px;
       position: relative;
+      background: #ffffff;
     }
   }
   &__number {
@@ -61,5 +67,43 @@
     bottom: 75px;
     transform: translateX(-50%);
     text-transform: uppercase;
+  }
+}
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .set {
+    background: $green-bg;
+    &__title {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 0.66rem;
+    }
+    &__number {
+      font-size: 7rem;
+    }
+    &__cards {
+      &--item {
+        width: 33%;
+        max-width: 220px;
+        height: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .set {
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }

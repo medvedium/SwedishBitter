@@ -91,3 +91,54 @@
     }
   }
 }
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .reviews {
+    &__title {
+      text-align: center;
+    }
+    padding: 0 calc(50vw - 384px);
+    &__switch {
+      &--item {
+        padding-left: 50px;
+        &.active {
+          padding-left: 50px;
+        }
+      }
+    }
+    &__item {
+      flex-basis: 100%;
+      &:nth-child(3) {
+        display: none;
+      }
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+    &__inner {
+      &-rus {
+        padding: 100px;
+      }
+    }
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    &__link {
+      margin-bottom: 40px;
+      &-wrap {
+        padding-right: 0;
+      }
+    }
+  }
+}

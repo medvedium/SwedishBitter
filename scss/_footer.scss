@@ -20,6 +20,8 @@
 }
 @media (max-width: 1200px) {
   .footer {
+    padding-right: 30px;
+    padding-left: 30px;
     &__wrap {
       flex-direction: column;
       align-items: center;
