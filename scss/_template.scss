@@ -33,7 +33,6 @@ p {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  //   padding: 25px 150px 25px 125px;
   width: 100%;
   display: inline-block;
   font-size: 14px;
@@ -49,5 +48,12 @@ p {
     height: 8px;
     margin-left: 20px;
     background: url("../img/arrow.png");
+  }
+  &-tiny {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &:after {
+      display: none;
+    }
   }
 }
