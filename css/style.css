@@ -298,7 +298,16 @@ p {
   display: none;
 }
 
+@media (max-width: 991.98px) {
+  .intro {
+    margin-bottom: 80px;
+  }
+}
+
 @media (max-width: 767.98px) {
+  .intro {
+    margin-bottom: 80px;
+  }
   .intro__text {
     display: none;
   }
@@ -792,6 +801,7 @@ p {
   .problems__title {
     font-size: 1.6rem;
     line-height: 2rem;
+    font-weight: 700;
   }
 }
 
