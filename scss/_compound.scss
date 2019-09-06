@@ -4,7 +4,31 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 130px;
+  &__title {
+    font-size: 2.66rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
 
+    &--list {
+      list-style: none;
+      font-size: 1.06rem;
+      font-weight: 400;
+
+      & li {
+        margin-bottom: 20px;
+      }
+
+      & li::before {
+        content: "\2022";
+        color: $green-secondary;
+        font-weight: bold;
+        display: inline-block;
+        width: 0.8em;
+        margin-left: -1em;
+      }
+    }
+  }
   &__hover {
     display: none;
     position: absolute;
@@ -97,7 +121,7 @@
 
     &--factoid {
       width: 830px;
-      height: 250px;
+      height: 270px;
       padding: 56px 93px 109px 80px;
       position: relative;
       font-size: 1.06rem;
@@ -115,32 +139,6 @@
         font-weight: bold;
         display: inline-block;
         width: 1em;
-        margin-left: -1em;
-      }
-    }
-  }
-
-  &__title {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 30px;
-
-    &--list {
-      list-style: none;
-      font-size: 1.06rem;
-      font-weight: 400;
-
-      & li {
-        margin-bottom: 20px;
-      }
-
-      & li::before {
-        content: "\2022";
-        color: $green-secondary;
-        font-weight: bold;
-        display: inline-block;
-        width: 0.8em;
         margin-left: -1em;
       }
     }
@@ -201,15 +199,10 @@
       padding-top: 20px;
       padding-bottom: 20px;
     }
+    &-tiny {
+      display: none;
+    }
   }
-}
-@media (max-width: 575.98px) {
-}
-
-@media (max-width: 767.98px) {
-}
-
-@media (max-width: 991.98px) {
 }
 
 @media (max-width: 1199.98px) {
@@ -220,6 +213,7 @@
     }
     &__item {
       width: 47%;
+      max-width: 330px;
       &-title {
         padding: 0 calc(50% - 250px);
         width: 100%;
@@ -230,19 +224,57 @@
         &-sm {
           display: block;
           width: 47%;
+          max-height: 330px;
           order: 12;
           display: flex;
           justify-content: center;
           align-items: center;
           position: relative;
           padding: 60px 30px 115px;
-
+          background: #ffffff;
           border: 1px solid $green-secondary;
         }
       }
       &:nth-child(12) {
         margin-bottom: 0;
         margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .compound {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+  .compound {
+    margin-bottom: 70px;
+    justify-content: center;
+    &__item {
+      width: 100%;
+      max-width: 300px;
+      &--factoid {
+        &-sm {
+          width: 100%;
+          background: #ffffff;
+          margin-top: 30px;
+        }
+      }
+    }
+    &__button {
+      &-sm {
+        display: none;
+      }
+      &-tiny {
+        display: block;
+        position: absolute;
+        bottom: 0;
       }
     }
   }

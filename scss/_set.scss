@@ -17,29 +17,33 @@
     justify-content: center;
     background: #ffffff;
     width: 100%;
-    max-width: 1010px;
-    max-height: 310px;
+    // max-width: 1010px;
+    // max-height: 310px;
     margin: 0 30px;
 
     &--item {
       width: 33%;
-      max-width: 310px;
-      height: 310px;
+      // max-width: 310px;
+      // height: 310px;
       border: 1px solid $green-secondary;
       margin: 10px;
       margin-bottom: 20px;
       position: relative;
       background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 39px 70px;
     }
   }
   &__number {
     font-size: 10rem;
     font-weight: 700;
     color: $green-bg;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    position: relative;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -70%);
   }
   &__bg {
     width: 100%;
@@ -54,7 +58,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -50%);
   }
   &__text {
     width: 100%;
@@ -64,17 +68,20 @@
     font-weight: 700;
     position: absolute;
     left: 50%;
-    bottom: 75px;
+    bottom: 50px;
     transform: translateX(-50%);
     text-transform: uppercase;
   }
 }
-@media (max-width: 575.98px) {
-}
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
+  .set {
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
 }
-
 @media (max-width: 991.98px) {
   .set {
     background: $green-bg;
@@ -87,7 +94,7 @@
       font-size: 0.66rem;
     }
     &__number {
-      font-size: 7rem;
+      font-size: 6.8rem;
     }
     &__cards {
       &--item {
@@ -98,12 +105,42 @@
     }
   }
 }
-
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
   .set {
+    &__number {
+      font-size: 6rem;
+    }
+    &__cards {
+      &--item {
+        padding: 50px 30px 50px;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .set {
+    margin-bottom: 70px;
     &__title {
-      text-align: center;
-      margin: 0 auto;
+      font-size: 1.6rem;
+    }
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+      background: $green-bg;
+      &--item {
+        border: none;
+        background: $green-bg;
+        margin: 0;
+      }
+    }
+    &__number {
+      color: #ffffff;
+      font-size: 8.6rem;
+    }
+    &__text {
+      bottom: 30px;
     }
   }
 }
