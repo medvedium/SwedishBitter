@@ -28,9 +28,11 @@
 
   &__body {
     width: 100%;
+
     &--wrap {
       padding: 0;
     }
+
     &--position {
       position: absolute;
       display: flex;
@@ -171,7 +173,8 @@
       font-size: 14px;
       font-weight: 600;
       border-bottom: 1px solid rgba($green-secondary, 0.2);
-      & > .problems__list--number {
+
+      &>.problems__list--number {
         font-size: 0.93rem;
       }
     }
@@ -180,7 +183,8 @@
       font-size: 16px;
       font-weight: 400;
       border-bottom: 1px solid rgba($green-secondary, 0.2);
-      & > .problems__list--number {
+
+      &>.problems__list--number {
         font-size: 0.8rem;
       }
     }
@@ -211,6 +215,7 @@
     left: 0px;
     width: 500px;
     padding: 25px 40px;
+
     &-tiny {
       display: none;
     }
@@ -252,21 +257,26 @@
     &__item {
       width: 100%;
     }
+
     &__inner {
       flex-direction: column;
       align-items: center;
     }
+
     &__body {
       background: $green-secondary;
       display: flex;
       justify-content: center;
+
       &--img {
         position: relative;
         bottom: 0;
       }
+
       &--wrap {
         position: relative;
       }
+
       &--position {
         &-01 {
           top: 210px;
@@ -314,13 +324,16 @@
         }
       }
     }
+
     &__title {
       text-align: center;
       margin: 0 auto 50px;
     }
+
     &__container {
       padding-bottom: 0;
     }
+
     &__button {
       left: 50%;
       transform: translateX(-50%);
@@ -328,6 +341,7 @@
       width: 416px;
     }
   }
+
   .factoid {
     &--wrap {
       bottom: -20px;
@@ -336,48 +350,59 @@
     }
   }
 }
-@media (max-width: 991.98px) {
-}
+
+@media (max-width: 991.98px) {}
+
 @media (max-width: 767.98px) {
   .problems {
     &__list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       &--bold {
         font-size: 0.8rem;
       }
+
       &--regular {
         font-size: 0.94rem;
       }
+
       &--item {
         align-self: flex-start;
         padding: 30px 30px 30px 10px;
         width: 100%;
         border-right: none;
       }
+
       &--active::before {
         right: 10px;
       }
     }
   }
 }
+
 @media (max-width: 575.98px) {
   .problems {
-    margin-bottom: 80px;
+    margin-bottom: 35px;
+
     &__container {
       padding-bottom: 0;
     }
+
     &__title {
       font-size: 1.6rem;
       line-height: 2rem;
       font-weight: 700;
     }
+
     &__body {
       display: none;
+
       &--img {
         display: none;
       }
+
       &--wrap {
         padding: 0;
         width: 100%;
@@ -385,25 +410,31 @@
         flex-direction: column-reverse;
       }
     }
+
     &__list {
       padding-bottom: 0;
+
       &--number {
         font-size: 0.8rem;
       }
     }
+
     &__button {
       display: none;
+
       &-tiny {
         display: block;
       }
     }
   }
+
   .factoid {
     &--wrap {
       position: relative;
       width: 100%;
       bottom: 0;
     }
+
     &__link {
       left: 50%;
       transform: translateX(-50%);

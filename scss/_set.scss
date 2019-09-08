@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 300px;
+
   &__title {
     font-size: 2.67rem;
     line-height: 1.25;
@@ -12,12 +13,13 @@
     margin-left: 370px;
     align-self: flex-start;
   }
+
   &__cards {
     display: flex;
     justify-content: center;
     background: #ffffff;
     width: 100%;
-    // max-width: 1010px;
+    max-width: 1010px;
     // max-height: 310px;
     margin: 0 30px;
 
@@ -36,6 +38,7 @@
       padding: 60px 39px 70px;
     }
   }
+
   &__number {
     font-size: 10rem;
     font-weight: 700;
@@ -45,6 +48,7 @@
     // left: 50%;
     // transform: translate(-50%, -70%);
   }
+
   &__bg {
     width: 100%;
     max-width: 1720px;
@@ -54,12 +58,14 @@
     top: 50%;
     z-index: -1;
   }
+
   &__img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   &__text {
     width: 100%;
     text-align: center;
@@ -82,9 +88,11 @@
     }
   }
 }
+
 @media (max-width: 991.98px) {
   .set {
     background: $green-bg;
+
     &__title {
       padding-top: 40px;
       padding-bottom: 40px;
@@ -93,9 +101,11 @@
     &__text {
       font-size: 0.66rem;
     }
+
     &__number {
       font-size: 6.8rem;
     }
+
     &__cards {
       &--item {
         width: 33%;
@@ -105,11 +115,13 @@
     }
   }
 }
+
 @media (max-width: 767.98px) {
   .set {
     &__number {
       font-size: 6rem;
     }
+
     &__cards {
       &--item {
         padding: 50px 30px 50px;
@@ -117,28 +129,34 @@
     }
   }
 }
+
 @media (max-width: 575.98px) {
   .set {
     margin-bottom: 70px;
+
     &__title {
       font-size: 1.6rem;
     }
+
     &__cards {
       flex-direction: column;
       align-items: center;
       margin-left: 0;
       margin-right: 0;
       background: $green-bg;
+
       &--item {
         border: none;
         background: $green-bg;
         margin: 0;
       }
     }
+
     &__number {
       color: #ffffff;
       font-size: 8.6rem;
     }
+
     &__text {
       bottom: 30px;
     }
