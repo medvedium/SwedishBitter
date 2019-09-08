@@ -179,4 +179,25 @@
   }
 }
 @media (max-width: 575.98px) {
+  .reviews {
+    &__switch {
+      &--item {
+        padding-left: 15px;
+        padding-right: 15px;
+        &.active {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+    &__item {
+      padding-right: 0px;
+    }
+    &__inner {
+      padding: 15px;
+      &-rus {
+        padding: 0px;
+      }
+    }
+  }
 }

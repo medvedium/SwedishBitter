@@ -54,6 +54,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     width: 350px;
+    &-tiny {
+      display: none;
+    }
   }
   &__img {
     position: absolute;
@@ -101,6 +104,9 @@
 }
 @media (max-width: 767.98px) {
   .guarantee {
+    &__inner {
+      padding-bottom: 0;
+    }
     &__title {
       background: $green-bg;
       font-size: 1.6rem;
@@ -108,13 +114,40 @@
       padding-top: 40px;
       padding-bottom: 40px;
     }
+    &__subtitle {
+      padding: 20px;
+    }
     &__item {
       flex-direction: column;
       align-items: center;
+      padding-left: 0;
     }
     &__img {
       &-sm {
         max-width: 280px;
+        margin: 0;
+      }
+    }
+    &__factoid {
+      margin: 0;
+      border: none;
+      padding: 15px;
+
+      &-wrap {
+        background: $green-bg;
+        margin-top: 20px;
+        padding: 0;
+      }
+    }
+    &__but {
+      background: $green-bg;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__button {
+      display: none;
+      &-tiny {
+        display: block;
       }
     }
   }
