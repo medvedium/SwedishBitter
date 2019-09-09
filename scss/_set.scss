@@ -118,6 +118,10 @@
 
 @media (max-width: 767.98px) {
   .set {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background: $green-bg;
+
     &__number {
       font-size: 6rem;
     }
@@ -126,6 +130,9 @@
       &--item {
         padding: 50px 30px 50px;
       }
+    }
+    &__bg {
+      display: none;
     }
   }
 }

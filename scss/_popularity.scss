@@ -137,6 +137,12 @@
 
 @media (max-width: 767.98px) {
   .popularity {
+    margin-bottom: 0;
+    &__block {
+      &--wrap {
+        z-index: 5;
+      }
+    }
     &__item:last-child {
       padding: 0 calc(50vw - 200px);
     }
