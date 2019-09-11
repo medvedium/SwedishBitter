@@ -2,19 +2,20 @@
   margin-bottom: 200px;
 
   &__inner {
-    padding: 0 calc(50% - 585px);
-    background: $green-bg;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    &-rus {
+    display: none;
+    &-wrap {
+      padding: 0 calc(50% - 585px);
+      background: $green-bg;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-active {
       display: flex;
       flex-wrap: wrap;
       padding-top: 80px;
       padding-bottom: 60px;
-    }
-    &-eng {
-      display: none;
     }
   }
   &__title {

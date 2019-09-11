@@ -1980,6 +1980,10 @@ p {
 }
 
 .reviews__inner {
+  display: none;
+}
+
+.reviews__inner-wrap {
   padding: 0 calc(50% - 585px);
   background: #f6f9f3;
   display: -webkit-box;
@@ -1994,7 +1998,7 @@ p {
           justify-content: space-between;
 }
 
-.reviews__inner-rus {
+.reviews__inner-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2002,10 +2006,6 @@ p {
       flex-wrap: wrap;
   padding-top: 80px;
   padding-bottom: 60px;
-}
-
-.reviews__inner-eng {
-  display: none;
 }
 
 .reviews__title {
