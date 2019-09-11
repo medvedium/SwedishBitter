@@ -2030,6 +2030,7 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #9a9a9a;
+  padding-left: 15px;
   cursor: pointer;
 }
 
@@ -2196,6 +2197,9 @@ p {
   .reviews__switch--item {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .reviews__switch--item:first-child {
+    padding-left: 15px;
   }
   .reviews__switch--item.active {
     padding-left: 15px;

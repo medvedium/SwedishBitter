@@ -35,6 +35,7 @@
       font-weight: 700;
       text-transform: uppercase;
       color: $gray;
+      padding-left: 15px;
       cursor: pointer;
       &:first-child {
         padding-left: calc(50% - 585px);
@@ -185,6 +186,9 @@
       &--item {
         padding-left: 15px;
         padding-right: 15px;
+        &:first-child {
+          padding-left: 15px;
+        }
         &.active {
           padding-left: 15px;
           padding-right: 15px;
