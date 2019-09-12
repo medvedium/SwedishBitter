@@ -1365,6 +1365,7 @@ p {
     padding: 15px;
     padding-bottom: 5px;
     margin-bottom: 0;
+    margin-top: 0px;
   }
   .history__text {
     padding: 15px;
@@ -2541,6 +2542,12 @@ p {
   }
   .guarantee__img-sm {
     padding-bottom: 20px;
+  }
+  .guarantee__button {
+    display: none;
+  }
+  .guarantee__button-tiny {
+    display: block;
   }
 }
 
