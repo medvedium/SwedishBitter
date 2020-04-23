@@ -44,6 +44,12 @@ p {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #658f41;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .button::after {
   content: "";
   display: inline-block;

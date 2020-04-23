@@ -40,6 +40,10 @@ p {
   line-height: 22px;
   text-align: center;
   cursor: pointer;
+  &:hover {
+    background-color: darken($green-main, 10%);
+    transition: all 0.3s;
+  }
 
   &::after {
     content: "";
